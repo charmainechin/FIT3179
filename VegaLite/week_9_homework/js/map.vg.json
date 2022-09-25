@@ -26,7 +26,7 @@
     "color": {
       "field": "TotalMedals",
       "type": "quantitative",
-      "scale": {"type": "linear", "rangeMin": 0, "rangeMax": 200}
+      "scale": {"type": "linear"}
     },
     "tooltip": [
       {"field": "properties.NAME", "type": "nominal", "title": "Country"},
