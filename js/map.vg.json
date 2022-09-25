@@ -5,7 +5,7 @@
   "height": 400,
   "projection": {"type": "equalEarth"},
   "data": {
-    "url": "https://raw.githubusercontent.com/charmainechin/FIT3179/main/VegaLite/week_9_homework/js/ne_110m_admin_0_countries.topojson",
+    "url": "https://raw.githubusercontent.com/charmainechin/FIT3179/main/js/ne_110m_admin_0_countries.topojson",
     "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
   },
   "transform": [
@@ -13,7 +13,7 @@
       "lookup": "properties.NAME",
       "from": {
         "data": {
-          "url": "https://raw.githubusercontent.com/charmainechin/FIT3179/main/VegaLite/week_9_homework/data/filtered_results.csv"
+          "url": "https://raw.githubusercontent.com/charmainechin/FIT3179/main/data/filtered_results.csv"
         },
         "key": "Country",
         "fields": ["GrandTotal"]
