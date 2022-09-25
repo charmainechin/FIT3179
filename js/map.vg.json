@@ -26,7 +26,7 @@
     "color": {
       "field": "TotalMedals",
       "type": "quantitative",
-      "scale": {"type": "linear", "scheme": "blues"},
+      "scale": {"type": "log", "scheme": "blues"},
       "title": "Total Medals"
     },
     "tooltip": [
