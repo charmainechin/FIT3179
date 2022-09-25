@@ -5,8 +5,8 @@
   "height": 400,
   "projection": {"type": "equalEarth"},
   "data": {
-    "url": "https://raw.githubusercontent.com/charmainechin/FIT3179/main/VegaLite/week_9_homework/js/ne_110m.topojson",
-    "format": {"type": "topojson", "feature": "ne_110m"}
+    "url": "https://raw.githubusercontent.com/charmainechin/FIT3179/main/VegaLite/week_9_homework/js/ne_110m_admin_0_countries.topojson",
+    "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
   },
   "transform": [
     {
@@ -26,9 +26,8 @@
     "color": {
       "field": "TotalMedals",
       "type": "quantitative",
-      "scale": {"type": "log", "scheme": "blues"},
-      "title": "Total Medals",
-      "legend": {"values":{}}
+      "scale": {"type": "linear", "scheme": "blues"},
+      "title": "Total Medals"
     },
     "tooltip": [
       {"field": "properties.NAME", "type": "nominal", "title": "Country"},
