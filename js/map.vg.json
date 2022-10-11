@@ -111,13 +111,13 @@
       "mark": {"type": "bar","fill":"gold","cornerRadiusEnd": 4},
       "encoding": {
         "x": {
-          "aggregate":"mean",
-          "field": "datum.Totals",
+          "aggregate":"median",
+          "field": "datum.Total",
           "type": "quantitative",
           "title": "Total Medals"
         },
         "y": {"field": "properties.NAME", "type": "nominal", "title": null},
-        "color": {"field":"datum.Medals"}
+        "color": {"field":"datum.Medal"}
       }
     },
     {
