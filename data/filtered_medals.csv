@@ -1,0 +1,292 @@
+﻿Country,Pivot Field Names,Pivot Field Values
+Morocco,B,7
+Morocco,G,5
+Morocco,S,5
+Algeria,B,2
+Algeria,G,4
+Algeria,S,3
+Argentina,B,
+Argentina,G,2
+Argentina,S,2
+Australia,B,21
+Australia,G,16
+Australia,S,20
+Austria,B,2
+Austria,G,1
+Austria,S,1
+Bahamas,B,5
+Bahamas,G,5
+Bahamas,S,2
+Barbados,B,1
+Barbados,G,
+Barbados,S,
+Burundi,B,
+Burundi,G,1
+Burundi,S,1
+Belgium,B,2
+Belgium,G,5
+Belgium,S,5
+Belarus,B,6
+Belarus,G,3
+Belarus,S,5
+Botswana,B,
+Botswana,G,
+Botswana,S,1
+Brazil,B,5
+Brazil,G,4
+Brazil,S,1
+Brunei,B,1
+Brunei,G,1
+Brunei,S,1
+Bulgaria,B,5
+Bulgaria,G,3
+Bulgaria,S,4
+British West Indies,B,2
+British West Indies,G,
+British West Indies,S,
+Canada,B,27
+Canada,G,11
+Canada,S,15
+Chile,B,
+Chile,G,
+Chile,S,1
+China,B,7
+China,G,8
+China,S,8
+Ivory Coast,B,
+Ivory Coast,G,
+Ivory Coast,S,1
+Cameroon,B,
+Cameroon,G,2
+Cameroon,S,
+Colombia,B,1
+Colombia,G,1
+Colombia,S,1
+Croatia,B,1
+Croatia,G,3
+Croatia,S,1
+Cuba,B,17
+Cuba,G,11
+Cuba,S,12
+Czech Republic,B,6
+Czech Republic,G,5
+Czech Republic,S,1
+Denmark,B,3
+Denmark,G,
+Denmark,S,3
+Djibouti,B,1
+Djibouti,G,
+Djibouti,S,
+Dominican Republic,B,
+Dominican Republic,G,2
+Dominican Republic,S,1
+Ecuador,B,
+Ecuador,G,1
+Ecuador,S,1
+Eritrea,B,1
+Eritrea,G,
+Eritrea,S,
+Spain,B,6
+Spain,G,3
+Spain,S,5
+Estonia,B,3
+Estonia,G,2
+Estonia,S,1
+Ethiopia,B,21
+Ethiopia,G,22
+Ethiopia,S,10
+Unified Team,B,3
+Unified Team,G,6
+Unified Team,S,9
+Finland,B,21
+Finland,G,31
+Finland,S,22
+France,B,24
+France,G,12
+France,S,24
+Germany,B,13
+Germany,G,6
+Germany,S,9
+United Kingdom,B,56
+United Kingdom,G,46
+United Kingdom,S,58
+Germany,B,23
+Germany,G,29
+Germany,S,24
+Germany,B,36
+Germany,G,16
+Germany,S,22
+Greece,B,8
+Greece,G,6
+Greece,S,9
+Grenada,B,
+Grenada,G,1
+Grenada,S,1
+Guatemala,B,
+Guatemala,G,
+Guatemala,S,1
+Haiti,B,
+Haiti,G,
+Haiti,S,1
+Hungary,B,14
+Hungary,G,6
+Hungary,S,10
+India,B,
+India,G,
+India,S,1
+Iran,B,
+Iran,G,
+Iran,S,1
+Ireland,B,1
+Ireland,G,3
+Ireland,S,2
+Iceland,B,1
+Iceland,G,
+Iceland,S,
+Italy,B,22
+Italy,G,14
+Italy,S,10
+Jamaica,B,20
+Jamaica,G,22
+Jamaica,S,32
+Japan,B,9
+Japan,G,5
+Japan,S,6
+Kazakhstan,B,2
+Kazakhstan,G,2
+Kazakhstan,S,
+Kenya,B,25
+Kenya,G,26
+Kenya,S,36
+South Korea,B,
+South Korea,G,1
+South Korea,S,1
+Saudi Arabia,B,
+Saudi Arabia,G,
+Saudi Arabia,S,1
+Latvia,B,1
+Latvia,G,
+Latvia,S,4
+Lithuania,B,1
+Lithuania,G,3
+Lithuania,S,1
+Luxembourg,B,
+Luxembourg,G,1
+Luxembourg,S,
+Mexico,B,2
+Mexico,G,3
+Mexico,S,6
+Mozambique,B,1
+Mozambique,G,1
+Mozambique,S,
+Namibia,B,
+Namibia,G,
+Namibia,S,4
+Netherlands,B,6
+Netherlands,G,5
+Netherlands,S,3
+Nigeria,B,7
+Nigeria,G,2
+Nigeria,S,4
+Norway,B,6
+Norway,G,5
+Norway,S,4
+New Zealand,B,11
+New Zealand,G,10
+New Zealand,S,3
+Panama,B,2
+Panama,G,1
+Panama,S,
+Philippines,B,2
+Philippines,G,
+Philippines,S,
+Poland,B,14
+Poland,G,21
+Poland,S,17
+Portugal,B,4
+Portugal,G,4
+Portugal,S,2
+Puerto Rico,B,1
+Puerto Rico,G,
+Puerto Rico,S,
+Qatar,B,2
+Qatar,G,
+Qatar,S,1
+Romania,B,10
+Romania,G,7
+Romania,S,12
+South Africa,B,4
+South Africa,G,8
+South Africa,S,14
+Russia,B,22
+Russia,G,21
+Russia,S,19
+Slovenia,B,1
+Slovenia,G,1
+Slovenia,S,2
+Serbia,B,1
+Serbia,G,
+Serbia,S,
+Sri Lanka,B,
+Sri Lanka,G,
+Sri Lanka,S,2
+Sudan,B,
+Sudan,G,
+Sudan,S,1
+Switzerland,B,
+Switzerland,G,
+Switzerland,S,5
+Slovakia,B,
+Slovakia,G,1
+Slovakia,S,
+Sweden,B,28
+Sweden,G,12
+Sweden,S,13
+Syria,B,
+Syria,G,1
+Syria,S,
+Tanzania,B,
+Tanzania,G,
+Tanzania,S,2
+Czech Republic,B,3
+Czech Republic,G,8
+Czech Republic,S,7
+Tajikistan,B,
+Tajikistan,G,1
+Tajikistan,S,
+Taipei,B,
+Taipei,G,
+Taipei,S,1
+Trinidad and Tobago,B,8
+Trinidad and Tobago,G,2
+Trinidad and Tobago,S,5
+Tunisia,B,1
+Tunisia,G,2
+Tunisia,S,2
+Turkey,B,2
+Turkey,G,
+Turkey,S,3
+Uganda,B,1
+Uganda,G,2
+Uganda,S,
+Ukraine,B,14
+Ukraine,G,2
+Ukraine,S,2
+Urs,B,48
+Urs,G,44
+Urs,S,39
+United States of America,B,164
+United States of America,G,278
+United States of America,S,223
+Venezuela,B,1
+Venezuela,G,
+Venezuela,S,1
+Rijeka,B,
+Rijeka,G,
+Rijeka,S,1
+Zambia,B,
+Zambia,G,
+Zambia,S,1
+ZAM,B,
+ZAM,G,
+ZAM,S,
