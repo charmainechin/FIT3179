@@ -3,9 +3,9 @@
     "data": {"url": "https://raw.githubusercontent.com/charmainechin/FIT3179/main/data/100m_filtered.csv"},
     "vconcat": [
     {
-      "width": 480,
+      "width": 800,
       "height": 480,
-      "mark": "circle",
+      "mark": {"type":"line", "point": true},
       "transform": [{"calculate": "datum.Year", "as": "Year"},{"calculate": "datum.Result", "as": "Result"},{"calculate": "datum.Gender == 'M'? 'Male':'Female'", "as": "Gender"}],
       "encoding": {
         "x": {
@@ -14,11 +14,12 @@
           "scale": {"domain": {"param": "brush"}},
           "axis": {"title": ""}
         },
-        "y": {"field": "Result", "type": "quantitative"},
+        "y": {"field": "Result", "type": "quantitative", "axis":{"title":"Result (s)"}},
         "color": {"field": "Gender","type":"nominal"}
+        
       }
     }, {
-      "width": 480,
+      "width": 800,
       "height": 60,
       "mark": "line",
       "params": [{
@@ -34,7 +35,7 @@
         "y": {
           "field": "Result",
           "type": "quantitative",
-          "axis": {"tickCount": 3, "grid": false}
+          "axis": {"tickCount": 3, "grid": false, "title": "Result (s)"}
         },
         "color": {"field": "Gender","type":"nominal"}
       }
