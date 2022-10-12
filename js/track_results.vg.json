@@ -1,0 +1,44 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {"url": "https://raw.githubusercontent.com/charmainechin/FIT3179/main/data/track_results_filtered.csv"},
+    "vconcat": [
+    {
+      "width": 800,
+      "height": 480,
+      "mark": {"type":"line", "point": true},
+      "transform": [{"calculate": "datum.Year", "as": "Year"},{"calculate": "datum.Result", "as": "Result"},{
+        "calculate": "datum.Event", "as": "Event"}],
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "temporal",
+          "scale": {"domain": {"param": "brush"}},
+          "axis": {"title": ""}
+        },
+        "y": {"field": "Result", "type": "quantitative", "axis":{"title":"Result (s)"}},
+        "color": {"field": "Event","type":"nominal"}
+        
+      }
+    }, {
+      "width": 800,
+      "height": 60,
+      "mark": "line",
+      "params": [{
+        "name": "brush",
+        "select": {"type": "interval", "encodings": ["x"]}
+      }],
+      "transform": [{"calculate": "datum.Event", "as": "Event"}],
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "Result",
+          "type": "quantitative",
+          "axis": {"tickCount": 3, "grid": false, "title": "Result (s)"}
+        },
+        "color": {"field": "Event","type":"nominal"}
+      }
+    }]
+  }
