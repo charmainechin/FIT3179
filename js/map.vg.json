@@ -99,7 +99,7 @@
       "mark": {"type": "bar", "cornerRadiusEnd": 4},
       "encoding": {
         "x": {
-          "aggregate":"sum",
+          "aggregate":"values",
           "field": "Total",
           "type": "quantitative",
           "title": "Total Medals"

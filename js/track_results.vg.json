@@ -1,0 +1,50 @@
+  {
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {"url": "https://raw.githubusercontent.com/charmainechin/FIT3179/main/data/track_results_filtered.csv"},
+    "width": 800,
+    "height": 480,
+    "encoding": {"x": {"field": "Year", "type": "temporal"}},
+    "layer": [
+      {
+        "encoding": {
+          "color": {"field": "Gender", "type": "nominal"},
+          "strokeDash": {"field":"Event","type":"nominal"},
+          "y": {"field": "Result", "type": "quantitative"}
+        },
+        "layer": [
+          {"mark": "line"},
+          {"transform": [{"filter": {"param": "hover", "empty": false}}], "mark": "point"}
+        ]
+      },
+      {
+        "transform": [{"pivot": "Event_1", "value": "Result", "groupby": ["Year"]}],
+        "mark": "rule",
+        "encoding": {
+          "opacity": {
+            "condition": {"value": 0.3, "param": "hover", "empty": false},
+            "value": 0
+          },
+          "tooltip": [
+            {"field": "800M Women", "type": "quantitative"},
+            {"field": "800M Men", "type": "quantitative"},
+            {"field": "400M Women", "type": "quantitative"},
+            {"field": "400M Men", "type": "quantitative"},
+            {"field": "200M Women", "type": "quantitative"},
+            {"field": "200M Men", "type": "quantitative"},    
+            {"field": "100M Women", "type": "quantitative"},
+            {"field": "100M Men", "type": "quantitative"}]
+        },
+        "params": [{
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": ["date"],
+            "nearest": true,
+            "on": "mouseover",
+            "clear": "mouseout"
+          }
+        }]
+      }
+    ]
+  }
+  

@@ -6,7 +6,8 @@
       "width": 800,
       "height": 480,
       "mark": {"type":"line", "point": true},
-      "transform": [{"calculate": "datum.Year", "as": "Year"},{"calculate": "datum.Result", "as": "Result"},{"calculate": "datum.Gender == 'M'? 'Male':'Female'", "as": "Gender"}],
+      "transform": [{"calculate": "datum.Year", "as": "Year"},{"calculate": "datum.Result", "as": "Result"},{
+        "calculate": "datum.Gender == 'M'? 'Male': 'Female'", "as": "Gender"}],
       "encoding": {
         "x": {
           "field": "Year",
