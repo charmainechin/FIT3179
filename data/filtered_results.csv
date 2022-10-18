@@ -1,69 +1,64 @@
 ﻿Country,B,G,S,GrandTotal
-Morocco,7,5,5,17
 Algeria,2,4,3,9
 Argentina,,2,2,4
 Australia,21,16,20,57
 Austria,2,1,1,4
 Bahamas,5,5,2,12
+Bahrain,1,1,1,3
 Barbados,1,,,1
-Burundi,,1,1,2
-Belgium,2,5,5,12
 Belarus,6,3,5,14
+Belgium,2,5,5,12
 Botswana,,,1,1
 Brazil,5,4,1,10
-Brunei,1,1,1,3
 Bulgaria,5,3,4,12
-British West Indies,2,,,2
+Burundi,,1,1,2
+Cameroon,,2,,2
 Canada,27,11,15,53
 Chile,,,1,1
 China,7,8,8,23
-Ivory Coast,,,1,1
-Cameroon,,2,,2
 Colombia,1,1,1,3
+Cote d'Ivoire,,,1,1
 Croatia,1,3,1,5
 Cuba,17,11,12,40
 Czech Republic,6,5,1,12
+Czechoslovakia,3,8,7,18
 Denmark,3,,3,6
 Djibouti,1,,,1
 Dominican Republic,,2,1,3
 Ecuador,,1,1,2
 Eritrea,1,,,1
-Spain,6,3,5,14
 Estonia,3,2,1,6
 Ethiopia,21,22,10,53
-Unified Team,3,6,9,18
 Finland,21,31,22,74
 France,24,12,24,60
-Germany,13,6,9,28
-United Kingdom,56,46,58,160
-Germany,23,29,24,76
+German Democratic Republic,23,29,24,76
 Germany,36,16,22,74
+Great Britain,56,46,58,160
 Greece,8,6,9,23
 Grenada,,1,1,2
 Guatemala,,,1,1
 Haiti,,,1,1
 Hungary,14,6,10,30
+Iceland,1,,,1
 India,,,1,1
 Iran,,,1,1
 Ireland,1,3,2,6
-Iceland,1,,,1
 Italy,22,14,10,46
 Jamaica,20,22,32,74
 Japan,9,5,6,20
 Kazakhstan,2,2,,4
 Kenya,25,26,36,87
-South Korea,,1,1,2
-Saudi Arabia,,,1,1
 Latvia,1,,4,5
 Lithuania,1,3,1,5
 Luxembourg,,1,,1
 Mexico,2,3,6,11
+Morocco,7,5,5,17
 Mozambique,1,1,,2
 Namibia,,,4,4
 Netherlands,6,5,3,14
+New Zealand,11,10,3,24
 Nigeria,7,2,4,13
 Norway,6,5,4,15
-New Zealand,11,10,3,24
 Panama,2,1,,3
 Philippines,2,,,2
 Poland,14,21,17,52
@@ -71,27 +66,33 @@ Portugal,4,4,2,10
 Puerto Rico,1,,,1
 Qatar,2,,1,3
 Romania,10,7,12,29
-South Africa,4,8,14,26
 Russia,22,21,19,62
-Slovenia,1,1,2,4
+Saudi Arabia,,,1,1
 Serbia,1,,,1
+Slovakia,,1,,1
+Slovenia,1,1,2,4
+South Africa,4,8,14,26
+South Korea,,1,1,2
+Soviet Union,48,44,39,131
+Spain,6,3,5,14
 Sri Lanka,,,2,2
 Sudan,,,1,1
-Switzerland,,,5,5
-Slovakia,,1,,1
 Sweden,28,12,13,53
+Switzerland,,,5,5
 Syria,,1,,1
-Tanzania,,,2,2
-Czech Republic,3,8,7,18
+Taiwan,,,1,1
 Tajikistan,,1,,1
-Taipei,,,1,1
+Tanzania,,,2,2
 Trinidad and Tobago,8,2,5,15
 Tunisia,1,2,2,5
 Turkey,2,,3,5
 Uganda,1,2,,3
 Ukraine,14,2,2,18
-Urs,48,44,39,131
-United States of America,164,278,223,665
+Unified Team,3,6,9,18
+United States of America,158,275,206,639
 Venezuela,1,,1,2
-Rijeka,,,1,1
+West Germany,13,6,9,28
+West Indies Federation,2,,,2
+Yugoslavia,,,1,1
 Zambia,,,1,1
+#N/A,6,3,17,26
