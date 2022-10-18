@@ -42,7 +42,7 @@
               "lookup": "properties.NAME",
               "from": {
                 "data": {
-                  "url": "https://raw.githubusercontent.com/charmainechin/FIT3179/main/data/filtered_results.csv"
+                  "url": "https://raw.githubusercontent.com/charmainechin/FIT3179/main/data/results2.csv"
                 },
                 "key": "Country",
                 "fields": ["GrandTotal"]
