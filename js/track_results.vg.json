@@ -3,48 +3,47 @@
     "data": {"url": "https://raw.githubusercontent.com/charmainechin/FIT3179/main/data/track_results_filtered.csv"},
     "width": 800,
     "height": 480,
+    "params":[
+      {
+        "name":"Event_selection",
+        "bind":{
+          "input":"select",
+          "options":[null, "100M","200M","400M","800M"],
+          "labels": ["Show All","100M","200M","400M","800M"],
+          "name":"Event Selection: "
+        }
+      }
+    ],
+    "transform": [
+      {"filter":"Event_selection == null || datum.Event == Event_selection"}
+    ],
+
     "encoding": {"x": {"field": "Year", "type": "temporal"}},
     "layer": [
       {
+        "mark": "line",
         "encoding": {
-          "color": {"field": "Gender", "type": "nominal"},
-          "strokeDash": {"field":"Event","type":"nominal"},
-          "y": {"field": "Result", "type": "quantitative"}
-        },
-        "layer": [
-          {"mark": "line"},
-          {"transform": [{"filter": {"param": "hover", "empty": false}}], "mark": "point"}
-        ]
+          "color": {"field": "Event_1", "type": "nominal","title":"Event"},
+          "y": {"field": "Result", "type": "quantitative","title":"Result (s)"},
+          "strokeWidth": {"value":3}
+        }
       },
       {
-        "transform": [{"pivot": "Event_1", "value": "Result", "groupby": ["Year"]}],
-        "mark": "rule",
+        "mark":"point",
         "encoding": {
-          "opacity": {
-            "condition": {"value": 0.3, "param": "hover", "empty": false},
-            "value": 0
-          },
-          "tooltip": [
-            {"field": "800M Women", "type": "quantitative"},
-            {"field": "800M Men", "type": "quantitative"},
-            {"field": "400M Women", "type": "quantitative"},
-            {"field": "400M Men", "type": "quantitative"},
-            {"field": "200M Women", "type": "quantitative"},
-            {"field": "200M Men", "type": "quantitative"},    
-            {"field": "100M Women", "type": "quantitative"},
-            {"field": "100M Men", "type": "quantitative"}]
-        },
-        "params": [{
-          "name": "hover",
-          "select": {
-            "type": "point",
-            "fields": ["date"],
-            "nearest": true,
-            "on": "mouseover",
-            "clear": "mouseout"
-          }
-        }]
+          "color": {"field": "Event_1", "type": "nominal"},
+          "y": {"field": "Result", "type": "quantitative"},
+          "strokeWidth": {"value":6},
+          "tooltip":[
+            {"field":"Event_1", "type": "nominal","title":"Event"},
+            {"field":"Year","type": "temporal"},
+            {"field":"Name","type":"nominal"},
+            {"field":"Result","type":"quantitative"}
+          ]
+        }
       }
+        
+      
     ]
   }
   

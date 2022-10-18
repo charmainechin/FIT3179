@@ -42,7 +42,7 @@
               "lookup": "properties.NAME",
               "from": {
                 "data": {
-                  "url": "https://raw.githubusercontent.com/charmainechin/FIT3179/main/data/results2.csv"
+                  "url": "https://raw.githubusercontent.com/charmainechin/FIT3179/main/data/filtered_results.csv"
                 },
                 "key": "Country",
                 "fields": ["GrandTotal"]
@@ -76,114 +76,54 @@
               }
             ]
           }
+        },
+        {
+          "transform": [
+            {
+              "lookup": "properties.NAME",
+              "from": {
+                "data": {
+                  "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/3_choropleth_map/data/countryInfo.csv"
+                },
+                "key": "name",
+                "fields": ["latitude", "longitude"]
+              }
+            }
+          ],
+          "mark": {"type": "text"},
+          "encoding": {
+            "longitude": {"field": "longitude", "type": "quantitative"},
+            "latitude": {"field": "latitude", "type": "quantitative"},
+            "text": {"field": "properties.NAME", "type": "nominal"},
+            "opacity": {
+              "condition": {
+                "test": "datum['properties.NAME'] == 'China' || datum['properties.NAME'] == 'United States of America' || datum['properties.NAME'] == 'Australia' || datum['properties.NAME'] == 'Russia' ||  datum['properties.NAME'] == 'Kenya' ||  datum['properties.NAME'] == 'Germany'",
+                "value": 1
+              },
+              "value": 0
+            }
+          }
         }
       ]
     },
     {
       "width": 700,
-      "transform": [
+      "data":{
+        "url": "data/results2.csv"
+      },
+      "transform":[
         {
-          "lookup": "properties.NAME",
-          "from": {
-            "data": {
-              "url": "https://raw.githubusercontent.com/charmainechin/FIT3179/main/data/results2.csv"
-            },
-            "key": "Country",
-            "fields": ["Medal", "Total"]
+          "filter":{"field":"Country","equal":"United States of America"}
           }
-        },
-        {"calculate": "datum.Total", "as": "Total"},
-        {"calculate": "datum.Medal == 'G'? 'Gold': datum.Medal == 'S'? 'Silver' : 'Bronze'", "as": "Medal"},
-        {"filter": {"param": "countrySelection", "empty": false}}
+        
       ],
-      "mark": {"type": "bar", "cornerRadiusEnd": 4},
+
+      "mark": {"type": "bar"},
+      
       "encoding": {
-        "x": {
-          "aggregate":"sum",
-          "field": "Total",
-          "type": "quantitative",
-          "title": "Total Medals"
-        },
-        "y": {"field": "properties.NAME", "type": "nominal", "title": null},
+        "x": {"aggregate": "count", "field": "Year"},
+        "y": {"field": "Country", "type": "nominal","title":null},
         "color": {"field": "Medal"}
-      }
-    },
-    {
-      "width": 700,
-      "transform": [
-        {
-          "lookup": "properties.NAME",
-          "from": {
-            "data": {
-              "url": "https://raw.githubusercontent.com/charmainechin/FIT3179/main/data/filtered_results.csv"
-            },
-            "key": "Country",
-            "fields": ["G"]
-          }
-        },
-        {"calculate": "datum.G", "as": "Total Gold medals"},
-        {"filter": {"param": "countrySelection", "empty": false}}
-      ],
-      "mark": {"type": "bar", "fill": "gold", "cornerRadiusEnd": 4},
-      "encoding": {
-        "x": {
-          "field": "Total Gold medals",
-          "type": "quantitative",
-          "title": "Total Gold medals"
-        },
-        "y": {"field": "properties.NAME", "type": "nominal", "title": null}
-      }
-    },
-    {
-      "width": 700,
-      "transform": [
-        {
-          "lookup": "properties.NAME",
-          "from": {
-            "data": {
-              "url": "https://raw.githubusercontent.com/charmainechin/FIT3179/main/data/filtered_results.csv"
-            },
-            "key": "Country",
-            "fields": ["S"]
-          }
-        },
-        {"calculate": "datum.S", "as": "Total Silver medals"},
-        {"filter": {"param": "countrySelection", "empty": false}}
-      ],
-      "mark": {"type": "bar", "fill": "silver", "cornerRadiusEnd": 4},
-      "encoding": {
-        "x": {
-          "field": "Total Silver medals",
-          "type": "quantitative",
-          "title": "Total Silver medals"
-        },
-        "y": {"field": "properties.NAME", "type": "nominal", "title": null}
-      }
-    },
-    {
-      "width": 700,
-      "transform": [
-        {
-          "lookup": "properties.NAME",
-          "from": {
-            "data": {
-              "url": "https://raw.githubusercontent.com/charmainechin/FIT3179/main/data/filtered_results.csv"
-            },
-            "key": "Country",
-            "fields": ["B"]
-          }
-        },
-        {"calculate": "datum.B", "as": "Total Bronze medals"},
-        {"filter": {"param": "countrySelection", "empty": false}}
-      ],
-      "mark": {"type": "bar", "fill": "sandybrown", "cornerRadiusEnd": 4},
-      "encoding": {
-        "x": {
-          "field": "Total Bronze medals",
-          "type": "quantitative",
-          "title": "Total Bronze medals"
-        },
-        "y": {"field": "properties.NAME", "type": "nominal", "title": null}
       }
     }
   ]
