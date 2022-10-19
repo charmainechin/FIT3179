@@ -36,7 +36,7 @@
           "strokeWidth": {"value":6},
           "tooltip":[
             {"field":"Event_1", "type": "nominal","title":"Event"},
-            {"field":"Year","type": "temporal"},
+            {"field":"Year","type": "temporal","timeUnit":"year", "title":"Year"},
             {"field":"Name","type":"nominal"},
             {"field":"Result","type":"quantitative"}
           ]
