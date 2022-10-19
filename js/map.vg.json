@@ -8,7 +8,7 @@
   "vconcat": [
     {
       "title": "Olympics Athletics Medals Won by Country (1896-2016)",
-      "width": 800,
+      "width": 600,
       "height": 400,
       "projection": {"type": "equalEarth"},
       "layer": [
@@ -107,7 +107,7 @@
       ]
     },
     {
-      "width": 700,
+      "width": 500,
       "data":{
         "url": "data/results2.csv"
       },
@@ -121,8 +121,8 @@
       "mark": {"type": "bar"},
       
       "encoding": {
-        "x": {"aggregate": "count", "field": "Year"},
-        "y": {"field": "Country", "type": "nominal","title":null},
+        "x": {"aggregate": "count", "field": "Year","title":"Total Medals"},
+        "y": {"field": "Country", "type": "nominal", "title":null},
         "color": {"field": "Medal"}
       }
     }
