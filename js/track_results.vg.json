@@ -2,7 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "data": {"url": "https://raw.githubusercontent.com/charmainechin/FIT3179/main/data/track_results_filtered.csv"},
     "width": 800,
-    "height": 480,
+    "height": 400,
     "params":[
       {
         "name":"Event_selection",
